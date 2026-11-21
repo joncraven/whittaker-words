@@ -26,23 +26,6 @@ already present, and runs both test suites. Idempotent — safe to re-run.
 Step-by-step manual walkthrough and troubleshooting:
 `whittaker-words-INSTALL.md`.
 
-## Install (one line; already done on this machine)
-
-```sh
-cp words-emacs/whittaker-mode.el ~/.emacs.d/lisp/ \
-  && emacs -Q --batch -f batch-byte-compile ~/.emacs.d/lisp/whittaker-mode.el
-```
-
-and in `~/.emacs`:
-
-```elisp
-(add-to-list 'load-path "~/.emacs.d/lisp")
-(require 'whittaker-mode)
-```
-
-(use-package / straight users can wrap the same `:load-path` —
-the file is standalone and its hooks carry `;;;###autoload` cookies.)
-
 ## Usage
 
 - Open a Latin `.tex` file (any LaTeX buffer auto-enables; also Org
