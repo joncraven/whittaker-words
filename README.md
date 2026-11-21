@@ -9,7 +9,7 @@ Emacs minor mode for offline Whitaker's Words lookup.
 the dictionary is **not** bundled here — `install.sh` clones it once at
 install time. `whittaker-mode` is a thin lookup front-end over that data.
 
-## Fresh machine (MacBook, another computer): one command
+## Fresh machine: one command
 
 Everything (dictionary build, package install, init snippet, tests) is
 automated by `install.sh` in this folder:
